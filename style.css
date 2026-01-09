@@ -1,0 +1,732 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* ================= HEADER ================= */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.55); /* HITAM TRANSPARAN */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav a {
+  color: #ddd;
+  margin-left: 20px;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.header nav a:hover,
+.header nav a.active {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* ================= HOME ================= */
+.home {
+  background: url("kampusviktor.jpg") center/cover no-repeat;
+  min-height: 100vh;
+  padding-top: 120px;
+  color: white;
+}
+
+.home-content {
+  max-width: 800px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* ================= DAFTAR PERTEMUAN ================= */
+.container {
+  padding: 140px 40px 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #222;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* ================= MATERI ================= */
+.materi {
+  background: #f4f4f4;
+  padding: 40px;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.materi-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* ================= BUTTON KEMBALI ================= */
+.btn-back {
+  display: inline-block;
+  padding: 10px 18px;
+  background: rgba(0, 0, 0, 0.75); /* hitam transparan */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transform: translateX(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+/* ===== BOLD UNTUK KOTAK PERTEMUAN (INDEX) ===== */
+.grid .item {
+  font-weight: 700;
+}
+
+/* Judul pertemuan */
+.grid .item {
+  font-size: 15px;
+}
+
+/* Subjudul */
+.grid .item span {
+  font-weight: 100;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ================= HEADER ================= */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px 40px;
+  background: rgba(0, 0, 0, 0.45); /* HITAM TRANSPARAN */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.header h1 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.header nav a {
+  color: #ddd;
+  margin-left: 14px;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.header nav a:hover,
+.header nav a.active {
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+/* ================= HOME ================= */
+.home {
+  background: url("kampusviktor.jpg") center/cover no-repeat;
+  min-height: 100vh;
+  padding-top: 120px;
+  color: white;
+}
+
+.home-content {
+  max-width: 850px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 32px;
+  border-radius: 14px;
+}
+
+.home-content h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.home-content p,
+.home-content li {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+  padding: 130px 40px 40px;
+}
+
+/* ================= GRID PERTEMUAN ================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+  margin-top: 24px;
+}
+
+/* KOTAK */
+.item {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 14px;
+  text-decoration: none;
+  color: #111;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s ease;
+}
+
+.item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+/* PERTEMUAN X (BESAR & BOLD) */
+.item .judul {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* SUBJUDUL (LEBIH KECIL & NORMAL) */
+.item .subjudul {
+  font-size: 13px;
+  font-weight: 400;
+  color: #555;
+}
+
+/* ================= HALAMAN MATERI ================= */
+.materi {
+  padding: 120px 40px 40px;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.materi h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.materi h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.materi p,
+.materi li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/* ================= BUTTON KEMBALI ================= */
+.btn-back {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-back:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transform: translateX(-4px);
+}
+/* ================= BUTTON PDF ================= */
+.btn-pdf {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 22px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-pdf:hover {
+  background: rgba(0, 0, 0, 1);
+  transform: translateY(-2px);
+}
+/* ================= HOME HERO ================= */
+.hero {
+  min-height: 100vh;
+  background: url("kampusviktor.jpg") center/cover no-repeat;
+  padding-top: 160px;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* CTA BUTTON */
+.btn-cta {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 28px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-cta:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transform: translateY(-3px);
+}
+
+/* ================= HOME CARD ================= */
+.home-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 60px 40px;
+  background: #f7f7f7;
+}
+
+.card {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.card p,
+.card li {
+  color: #555;
+  line-height: 1.6;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background: rgba(0, 0, 0, 0.85);
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+/* ================= HOME BACKGROUND ================= */
+body.home {
+  background: url("kampusviktor.jpg") center/cover no-repeat fixed;
+  min-height: 100vh;
+  color: white;
+}
+
+/* ================= OVERLAY ================= */
+body.home::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.238);
+  z-index: -1;
+}
+
+/* ================= HOME BACKGROUND ================= */
+body.home {
+  background: url("kampusviktor.jpg") center/cover no-repeat fixed;
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+/* Overlay hitam konsisten */
+body.home::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.329);
+  z-index: -1;
+}
+
+/* ================= HEADER ================= */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.538);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.header h1 {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.header nav a {
+  color: #dddddd;
+  margin-left: 20px;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.header nav a:hover,
+.header nav a.active {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+/* ================= HOME CONTENT ================= */
+.home-content {
+  max-width: 900px;
+  margin: auto;
+  padding: 160px 30px 80px;
+  text-align: center;
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  padding: 6px 16px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+/* Title */
+.home-content h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+/* Description */
+.home-content p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #dddddd;
+}
+
+/* ================= CARD ================= */
+.card-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 24px;
+  border-radius: 14px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.card p,
+.card li {
+  color: #dddddd;
+}
+
+/* ================= CTA ================= */
+.cta-btn {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 14px 36px;
+  border-radius: 30px;
+  background: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #dddddd;
+  transform: translateY(-4px);
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #dddddd;
+}
+.home-content p {
+  text-align: justify;
+}
+.home-content h3 {
+  font-size: 18px;
+  margin-top: 24px;
+}
+
+.home-content p,
+.home-content li {
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: justify;
+  font-family: Georgia, "Times New Roman", serif;
+}
+/* ===== HOME HEADER ===== */
+.home-header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.logo-unpam {
+  width: 90px; /* ukuran sedang */
+  margin-bottom: 12px;
+}
+
+.home-header h1 {
+  font-size: 26px;
+  margin: 5px 0;
+}
+
+.sub-title {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* NAV TETAP RAPI */
+.home-header nav a {
+  margin: 0 10px;
+}
+.logo {
+  animation: fadeDown 1s ease;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 150px; /* ukuran logo */
+  margin-bottom: 12px; /* jarak ke tulisan */
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.4));
+}
+.btn-back {
+  position: fixed; /* biar tidak ikut scroll */
+  top: 20px; /* jarak dari atas */
+  left: 20px; /* posisi kiri */
+  z-index: 999; /* biar tidak ketutup elemen lain */
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+
+  background: #3b3b3b;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.btn-back .icon {
+  width: 28px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-back:hover {
+  background: #2b2b2b;
+  transform: translateX(-4px);
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+  /* HEADER */
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 20px;
+  }
+
+  .header nav {
+    margin-top: 10px;
+  }
+
+  .header nav a {
+    margin: 5px;
+    display: inline-block;
+  }
+
+  /* HOME */
+  .home-content {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .home-content h1,
+  .home-content h2 {
+    font-size: 20px;
+  }
+
+  /* LOGO */
+  .home-content img {
+    width: 120px;
+  }
+
+  /* DAFTAR PERTEMUAN */
+  .container {
+    padding: 120px 20px 30px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* MATERI */
+  .materi {
+    padding: 20px;
+  }
+
+  iframe {
+    height: 400px;
+  }
+
+  /* BUTTON */
+  .btn-back,
+  .btn-pdf {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+/* ================= MOBILE FIX ================= */
+@media (max-width: 768px) {
+  .btn-back,
+  .btn-pdf {
+    font-size: 14px; /* kecilin teks */
+    padding: 8px 12px; /* kecilin tombol */
+    border-radius: 6px;
+  }
+
+  .btn-back {
+    margin-bottom: 12px;
+  }
+}
+.pdf-wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.pdf-wrapper iframe {
+  width: 100%;
+  height: 80vh;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .pdf-wrapper iframe {
+    height: 70vh;
+  }
+}
